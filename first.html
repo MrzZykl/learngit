@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta charset="utf-8">
+<style>
+	.ui-content{
+		
+	}
+</style>
+</head>
+
+<body>
+<div data-role="page" id="pagefirst">
+	<div data-role="header">
+    	<h1>欢迎来到我的主页!</h1>
+    </div>
+    <div data-role="content">
+    	<p>内容部分</p>
+        <a href="#pageTwo" data-transition="fade">使用淡入效果跳转到第二个页面</a>
+    </div>
+    <div data-role="footer">
+    	<h1>底部脚本</h1>
+    </div>
+</div>
+<div data-role="page" id="pageTwo">
+	<div data-role="header">
+    	<h1>第二个页面</h1>
+    </div>
+    <div data-role="content">
+    	<p>第二个内容部分</p>
+        <a href="#pagethree" data-transition="flip">使用淡入效果跳转到第三个页面</a>
+    </div>
+    <div data-role="footer">
+    	<h1>第二个底部脚本</h1>
+    </div>
+</div>
+<div data-role="page" id="pagethree">
+	<div data-role="header">
+    	<h1>第三个页面</h1>
+    </div>
+    <div data-role="content">
+    	<p>第三个内容部分</p>
+        <a href="#pageFour" data-transition="flow">抛出当前页面。</a>
+    </div>
+    <div data-role="footer">
+    	<h1>第3个底部脚本</h1>
+    </div>
+</div>
+<div data-role="page" id="pageFour">
+	<div data-role="header">
+    	<h1>第4个页面</h1>
+    </div>
+    <div data-role="content">
+    	<p>第4个内容部分</p>
+        <a href="#pageFive" data-transition="pop">像弹窗一样。</a>
+    </div>
+    <div data-role="footer">
+    	<h1>第4个底部脚本</h1>
+    </div>
+</div>
+<div data-role="page" id="pageFive">
+	<div data-role="header">
+    	<h1>第5个页面</h1>
+    </div>
+    <div data-role="content">
+    	<p>第5个内容部分</p>
+        <a href="#pageSix" data-transition="slide">从右向左滑动。</a>
+    </div>
+    <div data-role="footer">
+    	<h1>第5个底部脚本</h1>
+    </div>
+</div>
+<div data-role="page" id="pageSix">
+	<div data-role="header">
+    	<h1>第6个页面</h1>
+    </div>
+    <div data-role="content">
+    	<p>第6个内容部分</p>
+        <a href="#page7" data-transition="slideup">从下到上滑动。</a>
+    </div>
+    <div data-role="footer">
+    	<h1>第6个底部脚本</h1>
+    </div>
+</div>
+<div data-role="page" id="page7">
+	<div data-role="header">
+    	<h1>第7个页面</h1>
+    </div>
+    <div data-role="content">
+    	<p>第7个内容部分</p>
+        <a href="#page8" data-transition="slidedown">从上到下滑动。</a>
+    </div>
+    <div data-role="footer">
+    	<h1>第7个底部脚本</h1>
+    </div>
+</div>
+<div data-role="page" id="page8">
+	<div data-role="header">
+    	<h1>第8个页面</h1>
+    </div>
+    <div data-role="content">
+    	<p>第8个内容部分</p>
+        <a href="#page9" data-transition="turn">从上到下滑动。</a>
+        <a href="#" data-role="button" data-rel="back">返回按钮</a>
+    </div>
+    <div data-role="footer">
+    	<h1>第8个底部脚本</h1>
+    </div>
+</div>
+<div data-role="page" id="page9">
+	<div data-role="header">
+    	<h1>第9个页面</h1>
+    </div>
+    <div data-role="content">
+    	<p>第9个内容部分</p>
+        <a href="#pagefirst" data-transition="slidedown">从上到下滑动。</a>
+        <button class="ui-btn">按钮button</button>
+        <input type="button" value="按钮input" />
+        <a href="#" data-role="button" data-inline="true">按钮data-role="button"</a>
+        <a href="#" class="ui-btn">按钮class="ui-btn"</a>
+        <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-search ui-btn-icon-notext">搜索</a>
+        <a href="#" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">jia</a>
+    </div>
+    <div data-role="controlgroup" data-type="horizontal">
+    	<p>组合按钮水平排列</p>
+    	<a href="#" data-role="button">按钮1</a>
+        <a href="#" data-role="button">按钮2</a>
+        <a href="#" data-role="button">按钮3</a>
+    </div>
+    <div data-role="controlgroup" data-type="vertical" class="ui-controlgroup">
+    	<p>组合按钮垂直排列</p>
+    	<a href="#" class=" ui-btn ui-btn-inline ui-btn-b">按钮</a>
+        <a href="#" class=" ui-btn ui-btn-inline ui-corner-all ui-mini" >按钮</a>
+        <input type="button" class="ui-btn ui-shadow ui-shadow-icon ui-btn-inline ui-corner-all" value="按钮">
+        <a href="#" data-role="button" data-rel="back">返回按钮</a>
+        <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">按钮</a>
+        <a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">按钮</a>
+        <a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-top">按钮</a>
+        <a href="#" class="ui-btn ui-icon-back ui-btn-icon-notext ui-btn-inline">按钮</a>
+        <a href="#" class="ui-btn ui-icon-audio ui-btn-icon-right">按钮</a>
+        <a href="#" class="ui-btn ui-icon-lock ui-btn-icon-right">按钮</a>
+        <a href="#" class="ui-btn ui-icon-location ui-btn-icon-right">按钮</a>
+        <a href="#" class="ui-btn ui-icon-search ui-btn-icon-right">按钮</a>
+        <a href="#" class="ui-btn ui-icon-alert ui-btn-icon-right">按钮</a>
+        <a href="#" class="ui-btn ui-icon-grid ui-btn-icon-right">按钮</a>
+        <a href="#" class="ui-btn ui-icon-home ui-btn-icon-right">按钮</a>
+        <a href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" role="button">按钮</a>
+        
+        <h1>aaa</h1>
+    </div>
+    <div data-role="header" class="ui-dialog-contain">
+    	<a href="#" class="ui-btn ui-corner-all ui-icon-heart ui-icon-delete  ui-btn-icon-notext ui-btn-left" role="button">close</a>
+        <h1>aaa</h1>
+        <a href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" role="button">按钮</a>
+    </div>
+    <div data-role="main" class="ui-content">
+    	<a href="#myopo" data-rel="popup" class="ui-btn ">显示弹窗</a>
+        <div data-role="popup" id="myopo" class="ui-content">
+        	<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">关闭</a>
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">关闭</a>
+       <p>我在右上角有个关闭按钮</p>
+      <p><b>提示:</b> 你也可以通过点击弹窗外的区域来关闭弹窗。</p>
+        </div>
+    </div>
+    <div data-role="footer">
+    	<h1>第9个底部脚本</h1>
+    </div>
+</div>
+<div data-role="page" id="page10">
+    <div data-role="header">
+        <h1>第10页弹窗效果和data-dismissible控制点击空白不能不关闭弹窗</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    	<a href="#page11">page11</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-position-to="window">点击弹窗</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-transition="fade">淡入</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-transition="flip">翻转</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-transition="flow">抛出当前页后显示</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-transition="pop">弹出</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-transition="slide">向左滑动</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-transition="slidefade">向左滑动并淡入</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-transition="slideup">向上滑动 up</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-transition="slidedown">向下滑动</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-transition="turn">转向</a>
+        <a href="#mypopup" data-rel="popup" class="ui-btn" data-transition="none" >无过渡效果。</a>
+        <div data-role="popup" id="mypopup" data-dismissible="false" style="max-width:400px" data-arrow="l" data-overlay-theme="b">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">关闭</a>
+            <h1>这是弹窗</h1>
+        </div>
+        
+    </div>
+    
+     <div id="pageone" data-role="main" class="ui-content">
+        <p>点击图片放大它。</p>
+        <p>注意我们在右上角添加了 "返回按钮"。</p>
+        <a href="#myPopup" data-rel="popup" data-position-to="window">
+        <img src="//www.runoob.com/wp-content/uploads/2015/10/runoob.jpeg" alt="Skaret View" style="width:200px;"></a>
+    
+    <div data-role="popup" id="myPopup" data-overlay-theme="b">
+      <p>这是我的图片！</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="//www.runoob.com/wp-content/uploads/2015/10/runoob.jpeg" style="width:800px;height:400px;" alt="Skaret View">
+    </div>
+    </div>
+</div>
+
+<div data-role="page" id="page11">
+	<div data-role="header" data-position="fixed" data-fullscreen="true" >
+    	<h1>2112</h1>
+    </div>
+	<div data-role="main" class="ui-content" style="text-align:center">
+    	<p>123456789</p>
+    </div>
+    <div data-role="footer" data-position="fixed" data-fullscreen="true">
+    	<h1>121</h1>
+    </div>
+</div>
+
+<div data-role="page" id="page12">
+	<div data-role="panel" id="mypanel">
+    	<h1>面板</h1>
+        <a href="#page12" data-rel="close" class="ui-btn ui-btn-icon-left ui-icon-delete">关闭面板</a>
+    </div>
+    
+	<div data-role="header">
+    	<h1>欢迎来到我的主页!</h1>
+        <div data-role="navbar" >
+       	<ul>
+       		<li><a href="#" class="ui-btn-icon-left ui-corner-all ui-shadow ui-icon-arrow-l">123</a></li>
+       		<li ><a href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-left">123</a></li>
+       		<li><a href="#" class="ui-btn-icon-right ui-corner-all ui-shadow ui-icon-arrow-r ">123</a></li>
+       	</ul>
+        </div>
+    </div>
+    <div data-role="content">
+    	<p>内容部分</p>
+		<div data-role="navbar" data-iconpos="top">
+       	<ul>
+       		<li><a href="#mypanel" data-icon="arrow-l" class="ui-btn-active ui-state-persist"></a></li>
+       		<li ><a href="#" data-icon="home" ></a></li>
+       		<li><a href="#" data-icon="arrow-r"></a></li>
+       	</ul>
+        </div>
+    </div>
+    <div data-role="footer">
+    	<h1>底部脚本</h1>
+    </div>
+</div>
+<div data-role="page" id="page13">
+	<div data-role="header">
+    	<h1>欢迎来到我的主页!</h1>
+    </div>
+    <div data-role="content">
+    	<p>内容部分</p>
+		<div data-role="collapsible-set" data-collapsed="false">
+          	<h1>点击我可以折叠</h1>
+			<p>折叠内容1</p>
+            <div data-role="collapsible">
+            	<h1>点击我可以折叠</h1>
+				<p>折叠内容3</p>
+            </div>
+            <div data-role="collapsible">
+            	<h1>点击我可以折叠</h1>
+				<p>折叠内容3</p>
+            </div>
+            <div data-role="collapsible">
+            	<h1>点击我可以折叠</h1>
+				<p>折叠内容3</p>
+        	</div>
+        </div>
+
+    </div>
+    <div data-role="footer">
+    	<h1>底部脚本</h1>
+    </div>
+</div>
+
+<div data-role="page" id="page14">
+  <div data-role="main" class="ui-content">
+    <h2>拆分按钮</h2>
+    <ul data-role="listview" data-inset="true">
+      <li>
+        <a href="#">
+        <img src="chrome.png">
+        <h2>Google Chrome</h2>
+        <p>Google Chrome 是免费的开源 web 浏览器。发布于 2008 年。</p>
+        </a>
+        <a href="#">文本信息</a>
+      </li>
+      <li>
+        <a href="#">
+        <img src="firefox.png">
+        <h2>Mozilla Firefox</h2>
+        <p>Firefox 是来自 Mozilla 的 web 浏览器。发布于 2004 年。</p>
+        </a>
+        <a href=""></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div data-role="page" id="page15">
+  <div data-role="header">
+    <h1>欢迎来到我的主页</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <h2>弹窗列表</h2>
+    <a href="#myPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-gear ui-btn-icon-left">选择一个城市</a>
+
+    <div data-role="popup" id="myPopup2">
+      <ul data-role="listview" data-inset="true" style="min-width:250px;">
+        <li data-role="list-divider">Europe</li>
+        <li><a href="#">Norway</a></li>
+        <li><a href="#">Germany</a></li>
+        <li data-role="list-divider">Asia</li>
+        <li><a href="#">India</a></li>
+        <li><a href="#">Thailand</a></li>
+        <li data-role="list-divider">Africa</li>
+        <li><a href="#">Zimbabwe</a></li>
+        <li><a href="#">Uganda</a></li>
+    </ul>
+    </div>
+  </div>
+
+  <div data-role="footer">
+    <h1>底部文本</h1>
+  </div>
+</div>
+
+<div data-role="page" id="page16">
+  <div data-role="main" class="ui-content">
+    <h2>我的通讯录</h2>
+    <form class="ui-filterable">
+      <input id="myFilter" data-type="search" placeholder="填写内容">
+    </form>
+    <ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
+      <li><a href="#">Adele</a></li>
+      <li><a href="#">Agnes</a></li>
+      <li><a href="#">Albert</a></li>
+      <li><a href="#">Billy</a></li>
+      <li><a href="#">Bob</a></li>
+      <li><a href="#">Calvin</a></li>
+      <li><a href="#">Cameron</a></li>
+      <li><a href="#">Chloe</a></li>
+      <li><a href="#">Christina</a></li>
+      <li><a href="#">Diana</a></li>
+      <li><a href="#">Gabriel</a></li>
+      <li><a href="#">Glen</a></li>
+      <li><a href="#">Ralph</a></li>
+      <li><a href="#">Valarie</a></li>
+    </ul>
+    <input type="range" name="points" id="points" value="50" min="0" max="100">
+  </div>
+</div>
+<div data-role="page" id="page17">
+	<div data-role="header" data-theme="b" >
+    	<div data-role="navbar">
+            <ul data-role="listview">
+                <li><input id="myFilter" data-type="search" placeholder="填写内容"/></li>
+                <li><a href="" class="ui-btn" data-inline="false">查找</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="page18">
+	<div data-role="header">
+    	<p class="clickme">点击我1</p>
+    	<p class="clickme">点击我2</p>
+    </div>
+</div>
+</body>
+<script>
+	$(document).ready(function(e) {
+        $(".clickme").on("taphold",function(){
+				$(this).text("单击一秒钟！");
+		})
+		$(".clickme").on("swipeleft",function(){
+				$(this).text("向左滑动！");
+		})
+		$(".clickme").on("swiperight",function(){
+				$(this).text("向右滑动!");
+		})
+		/*$(document).on("scrollstart",function(){
+				alert("1");
+		})*/
+		
+    });
+</script>
+</html>
